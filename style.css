@@ -1,0 +1,126 @@
+body {
+    margin: 0px 0px 0px 0px;
+}
+
+.header {
+    color: white;
+    background-color: black;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2vw;
+    justify-content: space-between;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    margin-bottom: 1%;
+    top: 0;
+    position: sticky;
+    z-index: 1;
+}
+
+img {
+    padding-left: 2%;
+    padding-right: 2%;
+    object-fit: cover;  
+}
+
+.reviewName {
+    flex: 1 1 200%;
+}
+
+.about {
+    flex: 1;
+}
+
+.popup {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+#blackCatPicture {
+    width: 100px;
+    height: 100px;
+}
+
+.individualCover, .individualCoverSmall {
+    flex: 1 1 300%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    filter:grayscale();
+}
+
+.individualCover {
+    width: 900px;
+    height: 1440px;
+}
+
+.individualCoverSmall {
+    width: 450px;
+    height: 720px;
+}
+
+
+
+.about:hover, .reviewName:hover, .popup:hover {
+    color: lightgray;
+} 
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+
+.individualCover:hover, .individualCoverSmall:hover {
+    filter: drop-shadow(10px 10px 20px rgba(36, 36, 36, 0.5));
+}
+
+#bookCoversRowOne, #bookCoversRowTwo, #bookCoversRowThree, #bookCoversRowFour {
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#bookCovers, #reviewBookCovers{
+    display: flex;
+    flex-direction: vertical;
+}
+
+#bookCovers {
+    flex: 1 1 0;
+}
+
+#reviewBookCovers {
+    flex: 1 1 33%;
+}
+
+#bookInfo {
+    flex: 1 0 66%;
+}
+
+.reviewPageContent {
+    display: flex;
+}
+
+#bookInfo {
+    padding-left: 2%;
+}
